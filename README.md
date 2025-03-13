@@ -154,4 +154,4 @@ First, we define a simple `Node` class. This class is like a blueprint for creat
 
 Then we have three functions for traversing the tree: `inorder`, `preorder`, and `postorder`. The `inorder` function left->current->right. The `preorder` function visits current->left->right. The `postorder` function visits left->right->current.
 
-Then we simulate the same tree from the example above. Try running the code yourself to see how it works!
+Try running the code yourself and see how it works! (tip: sprinkle in some `console.log()`s here and there)
