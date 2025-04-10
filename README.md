@@ -26,7 +26,8 @@ Imagine you are giving a brief lesson on the Tree data structure to a relatively
 
 A tree data structure is basically linked nodes (or data) that are connected to one another the same way a tree is. If you turn the data structure upside down it seems like a tree. Think of the tree bark as the root, the main head of the structure and the leaf are other nodes that don't have anything connecting to them, the same way a leaf doesnt have anything else hanging on it. From root to leaf ends that would be considered the height of the tree. Using the example below node j has a height of 3 because a -> c -> g -> j.  On the other hand depth is how many nodes in we have to go in so if we use a -> c -> g -> j as an example again our depth would be 3 as well. (we start depth at 0)
 
-<!-- 
+
+        !!! example !!!
 
                                 a
                              (root)
@@ -40,7 +41,7 @@ A tree data structure is basically linked nodes (or data) that are connected to 
             h                                                j      
          (leaf)                                              (leaf)
 
- -->
+ 
 
 ## Prompt 3
 
