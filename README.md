@@ -24,11 +24,53 @@ Imagine you are giving a brief lesson on the Tree data structure to a relatively
 
 ### Response 2
 
+A tree data structure is basically linked nodes (or data) that are connected to one another the same way a tree is. If you turn the data structure upside down it seems like a tree. Think of the tree bark as the root, the main head of the structure and the leaf are other nodes that don't have anything connecting to them, the same way a leaf doesnt have anything else hanging on it. From root to leaf ends that would be considered the height of the tree. Using the example below node j has a height of 3 because a -> c -> g -> j.  On the other hand depth is how many nodes in we have to go in so if we use a -> c -> g -> j as an example again our depth would be 3 as well. (we start depth at 0)
+
+<!-- 
+
+                                a
+                             (root)
+                    /                    \
+                b                         c
+            (parent/ child one)        (parent/ child two)
+            /             \                    /        \
+            d             e                  f           g
+          (parent)     (leaf)              (leaf)        (parent)
+            /                                                \
+            h                                                j      
+         (leaf)                                              (leaf)
+
+ -->
+
 ## Prompt 3
 
 Any iterative function can be written recursively. Provide an example of an iterative function and the same function written recursively. Then, explain the benefits and/or drawbacks of each approach.
 
 ### Response 3
+An iterative function is anything that uses a loop (for or while loop). It is usually what we are taught from the beginning but as we learn anything we can iterate through we can do recursively. A recursive function invokes itself to start and continue. The benefits of doing a recursive function is the fact that it reduces time complexity, makes it easier to read and reduces the time we need to write out the code. With all of the advantages there are disadvantages like the fact it uses more memory, it can work slower than a normal loop and we can get stuck in the loop if we don't get out of it correctly.
+
+
+```js 
+            //iterative function
+       const triangle = () => { 
+        for (let i=0; i < 3; i++){
+            console.log(i)
+            } else if (i === 3){
+                }
+                console.log('end')
+        }
+
+        //recursion function
+       const triangleSum = (i = 0) => {
+        if (i === 3) {
+                return (`end`); 
+            } else {
+                console.log (i)
+                triangleSum(i++)
+            }
+        }
+```
+
 
 ## Prompt 4
 
